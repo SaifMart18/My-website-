@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cairo', Arial, sans-serif;
+    background: #f4f9fb;
+    margin: 0;
+    color: #183153;
+    direction: rtl;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 40px 5% 30px 5%;
+    background: linear-gradient(90deg, #e0e7ef 60%, #f4f9fb 100%);
+    box-shadow: 0 4px 14px rgba(197,215,227,0.17);
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-left: 32px;
+    box-shadow: 0 4px 24px #c5d7e3;
+    border: 3px solid #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #3b85c3;
+    font-size: 1.1em;
+    margin-top: 8px;
+}
+
+main {
+    max-width: 670px;
+    margin: 30px auto;
+    padding: 0 5%;
+}
+
+section {
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 28px;
+    padding: 26px 18px 18px 18px;
+    box-shadow: 0 2px 16px #e5ecf1;
+    position: relative;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #2585c0;
+    margin-bottom: 13px;
+}
+.about p {
+    line-height: 1.85;
+    font-size: 1.13em;
+}
+
+.services ul, .contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services ul li {
+    padding: 7px 0 7px 10px;
+    border-bottom: 1px solid #e9f0f6;
+    font-size: 1.05em;
+}
+
+.services ul li:last-child { border-bottom: none; }
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+}
+
+.skills-list span {
+    background: #e7f3fb;
+    color: #2380bb;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.contact ul li {
+    margin-bottom: 8px;
+    font-size: 1.09em;
+}
+
+a {
+    color: #2786c7;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+a:hover {
+    color: #174f7e;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 22px 0 10px 0;
+    color: #7396b9;
+    font-size: .98em;
+    letter-spacing: .2px;
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 0 15px 0;
+    }
+    .profile-img {
+        margin-left: 0;
+        margin-bottom: 18px;
+    }
+}
